@@ -1,0 +1,148 @@
+/* Header styling for category buttons */
+/* .category-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  gap: 15px;
+  padding: 20px 0;
+  background-color: #aa1e1e;
+} */
+.category-header {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+  background-color: #030000;
+}
+
+.category-header button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #eee9e9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-header button:hover {
+  background-color: #d3d3d3;
+}
+
+.active-button {
+  background-color: #007bff;
+  color: rgb(57, 91, 245) !important; /* Ensure text color changes */
+  border-color: #007bff;
+  font-weight: bold; /* Make the active button stand out */
+}
+/* 
+.category-header button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  
+  background-color: #ffffff;
+  border: 1px solid #eee9e9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-header button:hover {
+  background-color: #d3d3d3;
+} */
+
+/* Product container styling */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px 20px ;
+  background-color: #f3f2f2;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual product box styling */
+.product-box {
+  width: 200px;
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(250, 248, 248, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  /* margin-bottom: 10px; */
+  /* position: relative; */
+  padding:10px 10px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* On hover, scale up the product box */
+.product-box:hover {
+  transform: scale(1.05);
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+
+  /* margin-bottom: 5px; */
+}
+
+/* Product overlay (hidden by default, visible on hover) */
+.product-overlay {
+  position: absolute; /* Overlay should be positioned within the box */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(88, 83, 83, 0.8); /* Semi-transparent background */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.product-box:hover .product-overlay {
+  opacity: 1; /* Make overlay visible when hovering */
+}
+
+/* Product title and description styles inside the overlay */
+.product-title {
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #060c13;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-button {
+  padding: 8px 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #d60a0a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}

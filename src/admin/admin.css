@@ -1,0 +1,257 @@
+.admin-dashboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    font-size: large;
+    background-color: rgb(247, 245, 245);
+    margin-top:auto;
+   /* border: 2px solid red; */
+}
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    /* border: 2px solid green;
+ */
+}
+/* .dashboard-buttons button {
+    background-color: rgb(209, 134, 20);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+} */
+
+.dashboard-buttons button:hover {
+    background-color: darkgreen;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf8f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+.header-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+}
+
+.order-details-container {
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 10px 20px;
+    background-color:  #ffffff;;
+    border-radius: 8px;
+}
+.order-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #faf6f6;
+    
+    /* border-bottom: 1px solid #ddd; */
+    margin-bottom: 10px;
+}
+/* .order-table-container {
+    
+    
+    padding: 10px 0;
+} */
+
+.order-details-left {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-details-right {
+    position: relative;
+    display: flex;
+    justify-content:right; /* Align to the right */
+    cursor: pointer;
+    padding-right: 20px;
+
+}
+
+.download-section {
+    display: inline-block;
+    position: relative;
+}
+
+.download-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    /* margin-right: 20px;
+    width: 10%;
+    height: 10%; */
+}
+
+/* .download-button:hover {
+    background-color: #45a049;
+} */
+
+.download-options {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position the options directly below the icon */
+    right: 0; /* Align options to the right side */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 120px;
+    z-index: 1; 
+}
+
+.download-options button {
+    background-color: #9cb4c7;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3px 0;
+    border: none;
+    text-align: left;
+}
+
+.download-options button:hover {
+    background-color: #0b7dda;
+}
+
+.button-icon {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 4px; 
+    cursor: pointer;
+    object-fit: contain; 
+}
+
+.data-table {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    border-collapse: collapse;
+    background-color: #ffffff;;
+    border-radius: 8px;
+    table-layout: fixed;
+}
+
+ .data-table td {
+    border: 1px solid #f6f7f6;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20%; 
+}
+
+.status-button {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto; 
+}
+
+.status-button img.button-icon {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.status-div-button {
+    display: flex;
+    flex-direction: row; /* Changed to row for a rectangular alignment */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 160px; /* Increased width for a more rectangular look */
+    height: 50px; /* Decreased height to create a clearer rectangle */
+    background-color: #ffffff; /* White background */
+    border-radius: 4px; /* Reduced border-radius to enhance rectangular shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #161111; /* Darker text color for visibility */
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.status-div-button:hover {
+    background-color: #eff1ef;
+}
+
+.status-div-button img {
+    width: 30px; /* Adjusted width for a small rectangle inside */
+    height: 30px; /* Adjusted height to match rectangle button */
+    object-fit: cover; /* Ensures image scales properly */
+    margin-right: 8px; /* Space between image and text */
+    margin-top: 5px;
+}
+.data-table th:first-child, .data-table td:first-child {
+    width: 10%; /* Adjust the width for the checkbox column if needed */
+}
+.data-table th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff; /* White background for the header */
+    color: #333333; /* Dark text for better contrast */
+    border: 1px solid #f6f8f6;
+    padding: 8px;
+    height: 50px; /* Consistent height with rows */
+    vertical-align: middle; /* Light background color for header */
+}
+
+.data-table tr {
+    height: 50px; /* Set row height for consistent size */
+}
+
+.status-div-button span {
+    font-weight: bold;
+}
+
+
+
+.status-div-button img {
+    width: 100%;
+    height: 100%; /* Adjust height to half of the container height */
+    object-fit:contain; /* Ensures image scales and covers the available area */
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+
+
+.status-div-button span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}

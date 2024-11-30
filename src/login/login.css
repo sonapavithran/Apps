@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .login-container {
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 40rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: auto;
+  }
+  
+  .login-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .login-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form input::placeholder {
+    color: rgba(51, 51, 51, 0.7);
+  }
+  
+  .login-form input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .login-button, .signup-button {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .signup-button {
+    background-color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Styling */
+  
+  @media (max-width: 768px) {
+    .login-box {
+      width: 90%; /* Make login box take up more space on small screens */
+      padding: 15px;
+    }
+    
+    .login-box h1 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .login-box p {
+      font-size: 12px;
+    }
+  
+    .login-icon {
+      width: 60px; /* Reduce icon size on smaller screens */
+    }
+  
+    .login-form input, .login-button, .signup-button {
+      width: 90%; /* Make inputs and buttons wider on smaller screens */
+      font-size: 14px;
+    }
+  
+    .login-button, .signup-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .login-box h1 {
+      font-size: 18px;
+    }
+  
+    .login-icon {
+      width: 50px;
+    }
+  
+    .login-form input, .login-button, .signup-button {
+      font-size: 12px;
+    }
+  }
+  .password-container {
+    position: relative;
+    width: 80%; /* Matches input width */
+    margin:auto;
+  }
+  
+  /* Password input styling */
+  .password-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Add space for the icon */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+  }
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff; /* Blue color for the eye icon */
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  
+  .eye-icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
